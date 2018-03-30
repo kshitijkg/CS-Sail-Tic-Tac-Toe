@@ -1,0 +1,44 @@
+<html>
+<style>
+	.Square {
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	font-size: 30pt;
+	font-weight: bold;
+	font-family: Verdana;
+	color: #3aa0aa;
+}
+
+td:hover{
+	background-color: #f5f5f5;
+}
+</style>
+<link rel=¨stylesheet¨ type=¨text/css¨ href=¨CS@Sail.css¨>
+<script src="CS@Sail.js"></script>
+	<body onload="startGame();">
+		<h1 style="text-align: center; color: #3aa0aa">Welcome to my Tic-Tac-Toe game!</h1>
+		
+		<div align = "center"; id="message" style="color: #3aa0aa">messages will go here</div>
+		
+		<table align = "center"; border="1">
+			<tr>
+				<td id="s1" class="Square" onclick="if(document.counter==0){document.strategy=1;} nextMove(this);"></td>
+				<td id="s2" class="Square" onclick="if(document.counter==0){document.strategy=2;}nextMove(this);"></td>
+				<td id="s3" class="Square" onclick="if(document.counter==0){document.strategy=3;}nextMove(this);"></td>
+			</tr>
+			<tr>
+				<td id="s4" class="Square" onclick="if(document.counter==0){document.strategy=4;}nextMove(this);"></td>
+				<td id="s5" class="Square" onclick="if(document.counter==0){document.strategy=5;}nextMove(this);"></td>
+				<td id="s6" class="Square" onclick="if(document.counter==0){document.strategy=6;}nextMove(this);"></td>
+			</tr>
+			<tr>
+				<td id="s7" class="Square" onclick="if(document.counter==0){document.strategy=7;}nextMove(this);"></td>
+				<td id="s8" class="Square" onclick="if(document.counter==0){document.strategy=8;}nextMove(this);"></td>
+				<td id="s9" class="Square" onclick="if(document.counter==0){document.strategy=9;}nextMove(this);"></td>
+			</tr>
+		</table>
+		<div style="text-align: center;"><a href="javascript:startGame();" style="color: #3aa0aa">Start Over</a></div>
+		
+	</body>
+</html>
